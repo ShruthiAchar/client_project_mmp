@@ -7,6 +7,7 @@ import BulkUpload from "./pages/productManagement/cardCatalogue/bulkUpload";
 import CreateNewCard from "./pages/productManagement/cardCatalogue/createCard/createNewCard";
 import CardCatalogue from "./pages/productManagement/cardCatalogue/landingScreen/cardCateloge";
 import SalesDashboard from "./pages/sales/dashboard/Dashboard";
+import SalesReport from "./pages/sales/salesReport";
 export default function App() {
   return (
     <Routes>
@@ -42,10 +43,9 @@ export default function App() {
           element={<CardCatalogue />}
         />
 
-      <Route
-          path="/sales/salesDashboard"
-          element={<SalesDashboard />}
-        />
+        <Route path="/sales/salesDashboard" element={<SalesDashboard />} />
+
+        <Route path="/sales/salesReport" element={<SalesReport />} />
 
         {/* Catch all */}
         <Route path="*" element={<NotFoundPage />} />
