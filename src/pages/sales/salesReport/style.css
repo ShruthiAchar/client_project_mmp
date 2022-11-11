@@ -1,5 +1,6 @@
 .sales-report-container {
   background-color: #eceff2;
+  min-height: 100vh;
 }
 
 .header-container {
