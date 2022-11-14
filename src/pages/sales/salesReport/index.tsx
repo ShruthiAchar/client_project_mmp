@@ -6,7 +6,6 @@ import {
   salesDashboardList,
   statusRowHeading,
 } from "./../dashboard/dashboard.const";
-import { withRouter } from "react-router-dom";
 // import { Button } from "@mui/material";
 
 function SalesReportList(props: any) {
@@ -29,4 +28,4 @@ function SalesReportList(props: any) {
   );
 }
 
-export default withRouter(SalesReportList);
+export default SalesReportList;
